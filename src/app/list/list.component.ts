@@ -11,6 +11,7 @@ export class ListComponent implements OnInit {
 
   bucketList=[
     {
+      id:1,
       wish:"Leh Ladak",
       status:"Not Planned",
       type:"Bike trip",
@@ -27,7 +28,7 @@ export class ListComponent implements OnInit {
       }
     } ,
     {
-
+      id:2,
       wish:"Deep Water Diving",
       status:"Not Planned",
       type:"Exploring Nature",
@@ -82,8 +83,8 @@ export class ListComponent implements OnInit {
   ngOnInit() {
   }
 
-  handlePress(event){
-    alert("Hi");
+  handlePress(item){
+    console.log(item);
   }
 
 }

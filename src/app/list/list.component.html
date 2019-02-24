@@ -26,31 +26,23 @@
     <ui5-table-column data-ui5-slot="columns">
       <span style="line-height: 1.4rem" data-ui5-slot="header">Location</span>
     </ui5-table-column>
-    <ui5-table-column data-ui5-slot="columns">
-        <span style="line-height: 1.4rem" data-ui5-slot="header"></span>
-      </ui5-table-column>
-
-
-    <ui5-table-row data-ui5-slot="rows" *ngFor="let item of bucketList">
+    
+    <ui5-table-row data-ui5-slot="rows" *ngFor="let item of bucketList" (click)="handlePress(item)">
       <ui5-table-cell data-ui5-slot="cells">
-        <span style="line-height: 1.4rem">{{item.wish}}</span>
+        <span>{{item.wish}}</span>
       </ui5-table-cell>
       <ui5-table-cell data-ui5-slot="cells">
-        <span style="line-height: 1.4rem">{{item.type}}</span>
+        <span>{{item.type}}</span>
       </ui5-table-cell>
       <ui5-table-cell data-ui5-slot="cells">
-        <span style="line-height: 1.4rem">{{item.completeBefore}}</span>
+        <span>{{item.completeBefore}}</span>
       </ui5-table-cell>
       <ui5-table-cell data-ui5-slot="cells">
-        <span style="line-height: 1.4rem">{{item.tentitiveDate}}</span>
+        <span>{{item.tentitiveDate}}</span>
       </ui5-table-cell>
       <ui5-table-cell data-ui5-slot="cells">
-        <span style="line-height: 1.4rem">{{item.location}}</span>
+        <span>{{item.location}}</span>
       </ui5-table-cell>
-      <ui5-table-cell data-ui5-slot="cells">
-          <ui5-button type="Emphasized" (ui5-press)="handlePress()" >Hello world!</ui5-button> 
-        </ui5-table-cell>
-      
     </ui5-table-row>
 
   </ui5-table>

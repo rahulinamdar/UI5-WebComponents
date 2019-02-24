@@ -12,12 +12,14 @@ import "@ui5/webcomponents/dist/Icon";
 import "@ui5/webcomponents/dist/Table"; 
 import "@ui5/webcomponents/dist/Toolbar"; 
 import { ListComponent } from './list/list.component';
+import { DetailComponent } from './detail/detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    ListComponent
+    ListComponent,
+    DetailComponent
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   imports: [
